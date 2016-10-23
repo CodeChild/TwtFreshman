@@ -16,6 +16,7 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.example.zhangyulong.myapplication.Content"
         android:scrollbars="vertical"
+        android:background="#00000000"
         >
 
         <TextView

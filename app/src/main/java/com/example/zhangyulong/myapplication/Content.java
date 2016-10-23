@@ -40,7 +40,8 @@ public class Content extends AppCompatActivity {
                     title.setText(result.getData().getSubject());
                     newscome.setText("来源："+result.getData().getNewscome()+"\n"+"供稿："+result.getData().getGonggao()+"  审稿："+
                     result.getData().getShengao()+"  摄影:"+result.getData().getSheying());
-                    String html="<style=\"background-color:\"#EEEEEE\"></style>"+result.getData().getContent();
+                    String html=result.getData().getContent();
+                    content.setBackgroundColor(0x00000000);
                     content.loadDataWithBaseURL(null,html,"text/html", "utf-8",
                             null);
 
